@@ -97,7 +97,6 @@ function showMars() {
         }
     }
     if (showMars) {
-        console.log("show mars");
         const main = document.getElementsByTagName("main")[0];
         main.innerHTML += `<h2 class="asteroids-title">Welcome to Mars !!!</h2>
         <div class="asteroids"><div class="mars">
