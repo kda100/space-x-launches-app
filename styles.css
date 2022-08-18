@@ -1,0 +1,86 @@
+html {
+    font-family: 'Courier Prime', monospace;
+    color: white;
+}
+
+
+h1 {
+    letter-spacing: 5px;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    letter-spacing: 2px;
+}
+
+body {
+    margin: 20px;
+    background-image: url("assets/images/space-background.jpg");
+    background-size: 1280px;
+    box-sizing: border-box;
+}
+
+main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("assets/images/falcon-9-rocket.png");
+}
+
+.launch-outer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.launch-inner-container {
+    padding: 0px 20px 20px 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-width: 2px 2px 2px 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 0 15px whitesmoke;
+}
+
+#volume {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+}
+
+#volume:hover {
+    cursor: pointer;
+}
+
+.asteroids {
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.asteroids-title {
+    max-width: 400px;
+    background-color: black;
+}
+
+.asteroid img {
+    height: 100px;
+    width: 160px;
+}
+
+.rotate {
+    transition: transform .1s linear;
+}
