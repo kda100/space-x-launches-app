@@ -130,6 +130,7 @@ function setUpAsteroidGame() {
 
 getSpaceXLaunchesData().then(launchesArr => {
     const main = document.getElementsByTagName("main")[0];
+    main.innerHTML = "";
     for (let i = 0; i < launchesArr.length; i += 2) {
         const launchObject1 = launchesArr[i];
         if (i < launchesArr.length - 1) {
@@ -147,4 +148,4 @@ getSpaceXLaunchesData().then(launchesArr => {
     }
     main.innerHTML += `<h2 class="asteroids-title">Destroy the Asteroids to get to Mars !</h2><div class="asteroids">${createAsteroids()}</div>`;
     setUpAsteroidGame();
-});
+}).catch(e => document.getElementsByClassName("placeholder")[0].innerHTML = 'error');

@@ -3,6 +3,13 @@ html {
     color: white;
 }
 
+.placeholder {
+    position: fixed;
+    /* or absolute */
+    top: 50%;
+    left: 50%;
+}
+
 
 h1 {
     letter-spacing: 5px;
